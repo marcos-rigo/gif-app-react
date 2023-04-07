@@ -10,6 +10,7 @@ import AddUserForm from "../components/AddUserForm/AddUserForm";
 import DeleteConfirmation from "../components/DeleteConfirmation/DeleteConfirmation";
 import { ERROR_MESSAGE } from "../components/constants";
 import EditUserForm from "../components/EditUserForm/EditUserForm";
+import {  ToastContainer } from "react-toastify";
 
 const AdminPage = () => {
   
@@ -21,11 +22,15 @@ const AdminPage = () => {
             await axiosBack.delete('/users/'+selected);
             getUsers();
         } catch (error) {
+            if(!selected){
+                toast.error("Selecciona a alguien");
+            }
             toast.error(ERROR_MESSAGE);
         }
     }
 
     return ( 
+        <>
         <Container className="text-center">
         <h1>Página de administración</h1>
         <Row className="my-3">
@@ -45,6 +50,8 @@ const AdminPage = () => {
             </Col>
         </Row>
         </Container>
+        <ToastContainer/>
+        </>
      );
 }
  
