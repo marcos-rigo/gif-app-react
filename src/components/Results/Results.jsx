@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import axiosInstance from "../../config/axios";
+import {axiosInstance} from "../../config/axios";
 import { toast } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
 import GifCard from "../GifCard/GifCard";
@@ -8,7 +8,7 @@ import useGet from "../../hooks/useGet";
 
 
 const Results = ({results}) => {
-    const [trending, loading] = useGet('/gifs/trending?api_key='+import.meta.env.VITE_APP_GIPHY_API_KEY)
+    const [trending, loading] = useGet('/gifs/trending?api_key='+import.meta.env.VITE_APP_GIPHY_API_KEY,axiosInstance)
     return ( 
         <>
         {loading?

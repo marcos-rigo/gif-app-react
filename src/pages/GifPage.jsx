@@ -3,7 +3,7 @@ import { Col, Container, Row } from "react-bootstrap";
 import { ToastContainer } from "react-toastify";
 import SideBar from "../components/SideBar/SideBar";
 import Results from "../components/Results/Results";
-import axiosInstance from "../config/axios";
+import {axiosInstance} from "../config/axios";
 import Header from "../components/Header/Header";
 import Footer from "../components/Footer/Footer";
 

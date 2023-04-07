@@ -1,9 +1,10 @@
 import { Spinner } from "react-bootstrap";
 import useGet from "../hooks/useGet";
 import GifCard from "../components/GifCard/GifCard";
+import { axiosInstance } from "../config/axios";
 
 const StickerPage = () => {
-    const [stickers, loading] = useGet('stickers/trending?api_key='+import.meta.env.VITE_APP_GIPHY_API_KEY);
+    const [stickers, loading] = useGet('/stickers/trending?api_key='+import.meta.env.VITE_APP_GIPHY_API_KEY,axiosInstance);
     return ( 
         <>
         {

@@ -1,11 +1,6 @@
-import { useEffect, useState } from "react";
-import axiosInstance from "../../config/axios";
+
 
 const SearchBar = ({search, setSearch}) => {
-
-  
-
-   
 
     return ( 
         <form>

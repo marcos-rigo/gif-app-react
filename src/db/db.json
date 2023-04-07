@@ -1,0 +1,44 @@
+{
+  "users": [
+    {
+      "id": "123456",
+      "name": "diego",
+      "role": "admin"
+    },
+    {
+      "id": "123457",
+      "name": "marcos",
+      "role": "admin"
+    },
+    {
+      "id": "123458",
+      "name": "franco",
+      "role": "admin"
+    },
+    {
+      "id": "123459",
+      "name": "maria",
+      "role": "user"
+    },
+    {
+      "id": "123",
+      "name": "lucia",
+      "role": "admin"
+    },
+    {
+      "id": "643635",
+      "name": "mica",
+      "role": "admin"
+    },
+    {
+      "id": "6546546",
+      "name": "dora",
+      "role": "admin"
+    },
+    {
+      "id": "43543534645",
+      "name": "enzo",
+      "role": "usuario"
+    }
+  ]
+}
