@@ -2,14 +2,14 @@ import React, { cloneElement, useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 
-const GeneralModal = ({buttonText, modalTitle, modalBody}) => {
+const GeneralModal = ({buttonText, modalTitle, variant, modalBody}) => {
     const [show, setShow] = useState(false);
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
 
     return (
         <>
-            <Button variant="primary" onClick={handleShow}>
+            <Button variant={variant} onClick={handleShow} className='mx-2'>
                 {buttonText}
             </Button>
 
